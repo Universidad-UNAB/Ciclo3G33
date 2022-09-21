@@ -1,0 +1,15 @@
+body{
+    background-color:bisque;
+}
+
+label{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslategray;
+}
+
+p{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkslategray;
+}
