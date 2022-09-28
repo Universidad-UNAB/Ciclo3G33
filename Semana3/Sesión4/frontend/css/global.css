@@ -1,0 +1,83 @@
+.bodyGeneral{
+    background-color: #BFBFBF;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+.divEncabezado{
+    /* background-color: #FFC000; */
+    background-color: #70AD47;
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    font-size: 35px;
+    text-align: center;
+}
+
+.divData{
+    background-color: #E7E6E6;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.divBotones{
+    background-color: #E2F0D9;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+input[type=button]{
+    background-color: #70AD47;
+    font-size: 25px;
+    color: white;
+    border-color: #70AD47;
+}
+
+.divDataResult{
+    background-color: #A5A5A5;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+#tabData{
+    width: 100%;
+}
+
+.tHeadData{    
+    background-color: #A5A5A5;
+    color: white;
+    font-size: 25px;    
+}
+
+.tdDataA{    
+    background-color: #A5A5A5;
+    color: black;
+    font-size: 15px;    
+}
+
+.tdDataB{    
+    background-color: #EDEDED;
+    color: black;
+    font-size: 15px;    
+}
+
+.iconData{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* input[type=text]{
+    text-align: left;
+} */
+
+.widthTable{
+    width: 60%;
+}

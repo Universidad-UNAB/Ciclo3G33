@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gestión Usuarios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/global.css'>
+    <script src='../js/usuarios.js'></script>
+</head>
+<body>
+    <form id="usuarios" name="usuarios">
+        <div id="divBodyUsuarios" class="bodyGeneral">
+                <div id="encabezado" class="divEncabezado">
+                    <label>Registro usuarios</label>
+                </div>
+                <div id="data" class="divData">
+                    <table class="widthTable">
+                        <tr>
+                            <td>
+                                <label>Usario:</label>
+                            </td>
+                            <td>
+                                <input type="hidden" name="id" id="id" value="">
+                                <input type="text" name="usuario" id="usuario" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Contraseña</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="contrasenia" id="contrasenia" value="" min="11" max="99999999999" maxlength="11" onKeyDown="if(this.value.length==11) return false;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Persona:</label>
+                            </td>
+                            <td>                            
+                               <select name="persona" id="persona">
+                                    <option>--Seleccione--</option>
+                                    <option>--Aquí se listan las persoonas registradas (bd)--</option>
+                               </select>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <label>Rol:</label>
+                            </td>
+                            <td>                            
+                               <select name="rol" id="rol">
+                                    <option>--Seleccione--</option>
+                                    <option>--Aquí se listan los roles registradas (bd)--</option>
+                               </select>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>
+                                <label>Estado:</label>
+                            </td>
+                            <td>                            
+                               <select name="estado" id="estado">
+                                    <option>--Seleccione--</option>
+                                    <option id="1">Activo</option>
+                                    <option id="0">Inactivo</option>                                    
+                               </select>
+                            </td>
+                        </tr>                            
+                    </table>
+                </div>
+                <div id="botones" class="divBotones">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="button" value="Agregar" onclick="Agregar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Modificar" onclick="Modificar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Consultar" onclick="Consultar();">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dataResult" class="divDataResult">
+                    <table id="tabData">
+                        <thead class="tHeadData">
+                            <tr>
+                                <td>USARIO</td>
+                                <td>CONTRASEÑA</td>
+                                <td>PERSONA</td>                                
+                                <td colspan="2">ACCIONES</td>                                
+                            </tr>
+                        </thead>
+                        <tbody id="tDataResult">
+                            <!-- Aquí va la consulta de la base de datos -->                            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </form>
+</body>
+</html>
