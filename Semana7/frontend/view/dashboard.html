@@ -14,10 +14,11 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-
-
   <!-- Custom styles for this template -->
   <link href="../assets/css/dashboard.css" rel="stylesheet">
+
+  <!-- asociar cerrar sesión -->
+  <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     </button>
     <div class="navbar-nav">
       <div class="nav-item text-nowrap">
-        <a class="nav-link px-3" href="#">Sign out</a>
+        <a class="nav-link px-3" onclick="SignOut();">Sign out</a>
       </div>
     </div>
   </header>
@@ -60,8 +61,33 @@
                 <span data-feather="file-text"></span>
                 Registro Personas
               </a>
-            </li>            
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="./security/RoleV.html" target="WorkSpace">
+                <span data-feather="file-text"></span>
+                Registro Roles
+              </a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="./security/UserV.html" target="WorkSpace">
+                <span data-feather="file-text"></span>
+                Registro Usuarios
+              </a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="./security/ViewV.html" target="WorkSpace">
+                <span data-feather="file-text"></span>
+                Registro Vistas
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="./security/ViewRol.html" target="WorkSpace">
+                <span data-feather="file-text"></span>
+                Asignar roles a las vistas
+              </a>
+            </li> 
           </ul>
+         
 
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Adminsitrador de Congunto</span>

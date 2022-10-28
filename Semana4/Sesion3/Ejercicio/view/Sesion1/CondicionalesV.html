@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejemplo1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/global.css'>
+
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='../libreria/bootstrap/bootstrap.min.css'>    
+    <script src="../libreria/bootstrap/bootstrap.bundle.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src='../../js/Sesion1/Ejemplo1.js'></script>
+</head>
+<body>
+    <div class="container">        
+        <table class="table table-primary">
+            <tr>
+                <td colspan="2" class="titulo">Trabajo 1</td>
+            </tr>
+            <tr>
+                <td>
+                    Se dispone de 1'000.000(P) de pesos el cual se deposita en una entidad financiera que le pagará un interés mensual del 2.5% (i) sobre la cantidad inicial acumulada cada mes. ¿Cuánto se tendrá al final de 1 año(n-en meses)?
+                    <br>
+                    -	Aplicando la fórmula F = P * ( 1+i )^n
+                </td>
+                <td>
+                    <input type="button" id="btnEjecutar1" name="btnEjecutar1" value="Ejecutar" onclick="Calcular(1)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula es:
+                    <br>
+                    num. Pulsaciones = (220 - edad)/10
+                </td>
+                <td>
+                    <input type="button" id="btnEjecutar2" name="btnEjecutar2" value="Ejecutar" ondblclick="Calcular(2)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior.                
+                </td>
+                <td>
+                    <input type="button" id="btnEjecutar3" name="btnEjecutar3" value="Ejecutar" onclick="Calcular(3)">
+                </td>
+            </tr>
+        </table>
+    </div>    
+</body>
+</html>
